@@ -1,0 +1,30 @@
+#!/bin/bash
+#admSites.bash
+
+while true
+do
+	echo "Selecione a opção:"
+	echo "1- Ver se alguma pessoa acessou site proibido"
+	read opcao
+
+	case $opcao in
+	1)	echo "Digite o usuario: "
+                read usr
+
+                while read us
+                do
+			usuario=`echo "$us" | cut -d":" -f1`
+                        site=`echo "$us" | cut -d":" -f2`
+
+                        while read bl
+                        do
+                                if [ $site=$bl ] && [ $usr=$usuario ]
+                                then
+                                        echo "site proibido acessado: $site"
+                                fi
+                        done < blackList.txt
+                done < usuarioSite.txt
+
+	;;
+	esac
+done

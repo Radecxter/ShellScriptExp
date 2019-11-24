@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Digite o usuario: "
+                read usr
+
+                while read $us
+                do
+                        site=`echo "$us" | cut -d":" -f2`
+
+                        while read $bl
+                        do
+                                if [ "$site" = "$bl" ]
+                                then
+                                        echo "site proibido acessado: $site"
+                                fi
+                        done 
+                done 
+
