@@ -1,0 +1,8 @@
+#!/bin/bash
+#if.bash
+if [ -d $1 ]
+then
+	echo "o diretório existe"
+else
+	echo "o diretório nao existe"
+fi

@@ -1,0 +1,11 @@
+#!/bin/bash
+#lerArq.bash
+
+arq=$1
+
+while read linha
+do
+	#variavel nao inicializada antes assume valor 1
+	let i++
+	echo "Linha $i -> $linha "
+done < $arq

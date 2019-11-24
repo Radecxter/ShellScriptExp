@@ -1,0 +1,11 @@
+#!/bin/bash
+#switchCase.bash
+echo "voce acha o joao viado?"
+echo "1-sim 2-nao"
+read var
+
+case $var in
+	1) echo "O joao é um viadão" ;;
+	2) echo "o joao é viado, admita" ;;
+	*) echo "seu cu" ;;
+esac

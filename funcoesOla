@@ -1,0 +1,10 @@
+#!/bin/bash
+#funcoes.bash
+
+alomundo(){
+	echo "ola $1"
+}
+
+read -p "Digite seu nome: " nome
+
+alomundo $nome

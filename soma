@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "digite dois numeros para somar (exp: n enter n)"
+
+read a b
+
+soma=$(expr $a + $b)
+
+somas=$soma
+
+#somas=$(expr $soma + $1)
+
+echo $somas

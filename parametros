@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $1 $2 $3 $10 "ou seria" ${10}
+echo $#
+echo $*

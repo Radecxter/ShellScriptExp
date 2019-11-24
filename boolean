@@ -1,0 +1,24 @@
+#!/bin/bash
+#boolean.bash
+
+if [ 2 -eq 2 ] && [4 -eq 4 ]
+then
+ echo "verdade E"
+fi
+
+if [ 3 -eq 3 ] || [4 -eq 4 ]
+then
+ echo "verdade OU"
+fi
+
+if [ 2 = 2 ] || [ 3 -eq 4 ]
+then
+ echo "verdade OU"
+fi
+
+if ( test 2 = 3 ) && ( test "ola" = "oi" )
+then
+ echo "teste verdade E"
+else
+ echo "teste inverdade E"
+fi

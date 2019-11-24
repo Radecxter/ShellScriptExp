@@ -1,0 +1,18 @@
+#!/bin/bash
+#trataSenha.bash
+senha="radec244466666"
+read -sp "digite sua senha: " pass
+echo ""
+
+echo $pass
+if [ -n $pass ]
+then
+	echo "teste"
+fi
+
+if [ $senha = $pass ] 2> /dev/null
+then
+	echo "A senha está correta"
+else
+	echo "A senha está incorreta"
+fi

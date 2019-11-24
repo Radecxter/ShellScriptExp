@@ -1,0 +1,24 @@
+#!/bin/bash
+#exwhile.bash
+
+flag=false
+
+until $flag
+do
+	echo "Menu"
+	echo "1- Nada a fazer..."
+	echo "2- Nada a fazer denovo"
+	echo "3- Sair"
+
+	read -p "Digite a opção: " opcao
+
+	case $opcao in
+		3) echo "Estou indo embora"
+		   sleep 2
+		   flag=true
+		   echo "Fuiiiii"
+		;;
+		*) clear
+		;;
+	esac
+done

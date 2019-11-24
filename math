@@ -1,0 +1,18 @@
+#!/bin/bash
+#math.bash
+if [ $# -gt 2 ]
+then
+	echo "digite somente dois parametros"
+	echo "voce digitou mais de dois: "$#
+elif [ $# -lt 2 ]
+then
+	echo "Digite somente 2 parametros"
+	echo "Voce digitou menos que 2:" $#
+else
+	if [ $1 -eq $2 ] 
+	then
+		echo "os parametros sao iguais"
+	else
+		echo "os parametros sao diferentes"
+	fi
+fi
